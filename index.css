@@ -1,0 +1,329 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    /* flex-wrap: wrap; */
+}
+
+.main{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.map{
+    position: fixed;
+    bottom:10%;
+    left: 47%;
+    background-color: black;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.map:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.top{
+    z-index: 1;
+}
+
+.glb{
+    mix-blend-mode: multiply;
+}
+
+.top-bar{
+    position: relative;
+    margin: 1px 15px 15px 15px;
+    height: 30px;
+    top: 10px;
+    /* padding: 5px 20px; */
+}
+
+.logo{
+    position: absolute;
+    left: 100px;
+    top: 6px;
+}
+
+.logoimg{
+    mix-blend-mode: multiply;
+    scale: 3;
+}
+
+.logoimg:hover{
+    cursor:pointer;
+}
+
+.stay{
+    position: absolute;
+    top: 7px;
+    left: 42%;
+    
+}
+
+a{
+    text-decoration: none;
+    /* color: black; */
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0px 20px;
+}
+
+.stays{
+    color: black;
+}
+
+.exp{
+    color: grey;
+}
+
+a:hover{
+    color: black;
+}
+
+.btn1{
+    position: absolute;
+    right: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    /* color: rgb(117, 115, 115); */
+    font-weight: 500;
+    padding: 10px;
+}
+
+.btn1:hover{
+    color: black;
+    background-color:rgba(219, 212, 212, 0.555) ;
+}
+
+.btn2{
+    position: absolute;
+    right: 115px;
+    /* top: 12px; */
+    padding: 10px 8px;
+    border-radius: 17px;
+
+}
+
+.btn2:hover{
+    cursor: pointer;
+    background-color:rgba(219, 212, 212, 0.555) ;
+}
+
+.pfp{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: -3px;
+    border-radius: 25px;
+    padding: 4px 20px;
+    /* margin: 5px; */
+    border: 1px solid rgb(209, 205, 205);
+}
+
+.pfp:hover{
+    
+    box-shadow: 0px 1px 1px 1px rgba(142, 140, 140, 0.518);
+}
+
+.pfpimg{
+    mix-blend-mode: multiply;
+}
+.options{
+    align-self: center;
+}
+.optionsimg{
+    mix-blend-mode: multiply;
+    top: 15px;
+    /* align-self: center; */
+}
+
+.account{
+    border-radius: 50%;
+    /* background-color: white; */
+    /* color: white; */
+}
+
+.accbtn{
+    scale: 3;
+    /* background-color: white; */
+    border: 0px;
+    padding: 0px;
+    /* mix-blend-mode: multiply; */
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    width: 50%;
+    left: 26%;
+    top: 20px;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 1px solid rgb(209, 205, 205);
+    border-radius: 30px;
+    /* padding: 4px 5px; */
+    height: 60px;
+}
+
+.navflex{
+    align-self: center;
+    padding: 12px 20px;
+    border-radius: 30px;
+    /* text-wrap: nowrap; */
+}
+
+.navflex:hover{
+    background-color:rgba(219, 212, 212, 0.555) ;
+    cursor: pointer;
+
+}
+
+.navtext{
+    font-size: 0.9rem;
+    margin: 0px;
+    /* padding: -5px; */
+}
+.one{
+    font-weight: 700;
+}
+.two{
+    font-weight: 400;
+    color: rgb(72, 71, 71);
+}
+.location{
+    flex-grow: 1;
+}
+
+.check-in{
+flex-grow: 0.1;
+}
+.check-out{
+flex-grow: 0.1;
+}
+
+.guests{
+flex-grow: 1;
+}
+
+.search{
+    position: absolute;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    right: 10px;
+    top: 6px;
+    background-color:#ff385c;
+    color: white;
+    border: 0px;
+}
+.searchimg{
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+}
+.search:hover{
+    background-color: #d83856;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    justify-content: center;
+    margin: 5px 25px;
+    padding-top: 30px;
+    
+}
+
+.card{
+    width: 310px;
+    border-radius: 14px;
+    margin: 12px;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.dp{
+    position: relative;
+    width: inherit;
+    border-radius: 14px;
+    
+}
+
+.dpimg{
+    /* position: absolute; */
+    width: inherit;
+    height: 310px;
+    object-fit: cover;
+    border-radius: inherit;
+
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: -1;
+    /* border-radius: 50%; */
+    /* mix-blend-mode: multiply; */
+}
+
+.nextimg{
+    border-radius: 50%;
+}
+
+.nextimg:hover{
+    z-index: 1;
+}
+
+.feature{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    border-radius: 17px;
+    padding: 4px 9px;
+    background-color: rgba(128, 128, 128, 0.582);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.heart{
+    position: absolute;
+    right: 11px;
+    top: 12px;
+
+        width: 24px; /* pathのサイズ */
+        height: 24px; /* pathのサイズ */
+        background: #4e393952; /* 色 */
+        clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+        transform: scale(1);
+    
+}
+
+.heart:hover{
+    /* background-color: red; */
+    transform: scale(1.15);
+}
+
+.description{
+    color: grey;
+    margin: 3px;
+}
+
+h3{
+    margin: 3px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.price{
+    margin: 3px;
+}
